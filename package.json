@@ -1,6 +1,6 @@
 {
 	"name": "@supbose/qstools",
-	"version": "1.0.1",
+	"version": "1.0.5",
 	"private": false,
 	"description": "前端工具包",
 	"main": "min/qstools.min.js",
