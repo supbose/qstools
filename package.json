@@ -1,6 +1,6 @@
 {
 	"name": "qui-tools",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"private": false,
 	"description": "前端工具包",
 	"main": "min/qui-tools.min.js",
