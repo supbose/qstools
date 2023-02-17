@@ -1,6 +1,6 @@
 {
-	"name": "qs-tools",
-	"version": "1.0.6",
+	"name": "qui-tools",
+	"version": "1.0.7",
 	"private": false,
 	"description": "前端工具包",
 	"main": "min/qstools.min.js",
