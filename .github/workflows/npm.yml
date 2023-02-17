@@ -21,6 +21,6 @@ jobs:
         with:
           node-version: 10
           registry-url: https://registry.npmjs.org/  # 设置发包npm地址仓库
-      - run: npm publish # 执行发布
+      - run: npm publish --access public # 执行发布
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}} # 刚刚设置的 NPM_TOKEN
