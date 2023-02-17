@@ -1,1 +1,1 @@
-# qstools
+# qstools demo
