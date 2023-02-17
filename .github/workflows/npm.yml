@@ -1,0 +1,26 @@
+name: 'GitHub Actions To Npm'
+
+on: 
+  push:
+      tags:
+          - v*.*.*
+
+jobs:
+  mirror_to_Npmjs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v1
+      - name: 'es5'
+        run: npm run babel
+      - name: 'qstools.min.js'
+        run: npm run build
+          # 执行部署
+      - name: '发布到 NPM'
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10
+          registry-url: https://registry.npmjs.org/  # 设置发包npm地址仓库
+      - run: npm publish # 执行发布
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}} # 刚刚设置的 NPM_TOKEN
