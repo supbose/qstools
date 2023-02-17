@@ -12,7 +12,7 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@v1
       - name: 'es5'
-        run: npm run babel
+        run: npm install && npm run babel
       - name: 'qstools.min.js'
         run: npm run build
           # 执行部署
