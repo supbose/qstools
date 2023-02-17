@@ -3,7 +3,7 @@
 	"version": "1.0.7",
 	"private": false,
 	"description": "前端工具包",
-	"main": "min/qstools.min.js",
+	"main": "min/qui-tools.min.js",
 	"scripts": {
 		"babel": "babel src -d es5lib",
 		"build": "node script/build.js"
@@ -32,7 +32,5 @@
 		"rimraf": "^2.6.2",
 		"webpack": "^3.8.1"
 	},
-	"dependencies": {
-		"@supbose/qstools": "^1.0.5"
-	}
+	"dependencies": {}
 }
