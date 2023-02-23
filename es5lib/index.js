@@ -95,97 +95,101 @@ var isPhone = require('./reg/isPhone');
 var version = require('./other/version');
 var ajax = require('./other/ajax');
 
+// qingshu扩展
+var dayjs = require('./qingshu/extend/dayjs');
+
 module.exports = {
-  // string
-  trim: trim,
-  changeCase: changeCase,
-  repeatStr: repeatStr,
-  replaceAll: replaceAll,
-  replaceStr: replaceStr,
-  checkStringType: checkStringType,
-  checkPwdStrength: checkPwdStrength,
-  randomWord: randomWord,
-  countStr: countStr,
-  filterStr: filterStr,
-  formatText: formatText,
-  stringToBase32: stringToBase32,
-  stringToBase64: stringToBase64,
+	//qingshu- dayjs
+	dayjsScope: dayjs.dayjsScope,
+	// string
+	trim: trim,
+	changeCase: changeCase,
+	repeatStr: repeatStr,
+	replaceAll: replaceAll,
+	replaceStr: replaceStr,
+	checkStringType: checkStringType,
+	checkPwdStrength: checkPwdStrength,
+	randomWord: randomWord,
+	countStr: countStr,
+	filterStr: filterStr,
+	formatText: formatText,
+	stringToBase32: stringToBase32,
+	stringToBase64: stringToBase64,
 
-  // array
-  removeRepeatArr: removeRepeatArr,
-  upsetArr: upsetArr,
-  maxArr: maxArr,
-  minArr: minArr,
-  sumArr: sumArr,
-  covArr: covArr,
-  randomOne: randomOne,
-  getEleCount: getEleCount,
-  getCount: getCount,
-  getArrayNum: getArrayNum,
-  removeArrayForValue: removeArrayForValue,
-  getOptionArray: getOptionArray,
-  filterOptionArray: filterOptionArray,
-  arraySort: arraySort,
-  arrayEqual: arrayEqual,
+	// array
+	removeRepeatArr: removeRepeatArr,
+	upsetArr: upsetArr,
+	maxArr: maxArr,
+	minArr: minArr,
+	sumArr: sumArr,
+	covArr: covArr,
+	randomOne: randomOne,
+	getEleCount: getEleCount,
+	getCount: getCount,
+	getArrayNum: getArrayNum,
+	removeArrayForValue: removeArrayForValue,
+	getOptionArray: getOptionArray,
+	filterOptionArray: filterOptionArray,
+	arraySort: arraySort,
+	arrayEqual: arrayEqual,
 
-  // data
-  numAdd: numAdd,
-  numSub: numSub,
-  numMulti: numMulti,
-  numDiv: numDiv,
-  percent: percent,
-  fillStr: fillStr,
-  dataType: dataType,
+	// data
+	numAdd: numAdd,
+	numSub: numSub,
+	numMulti: numMulti,
+	numDiv: numDiv,
+	percent: percent,
+	fillStr: fillStr,
+	dataType: dataType,
 
-  // dom
-  hasClass: hasClass,
-  addClass: addClass,
-  removeClass: removeClass,
-  setStyle: setStyle,
-  setContent: setContent,
-  show: show,
-  hide: hide,
-  offset: offset,
-  getScrollTop: getScrollTop,
-  setScrollTop: setScrollTop,
-  debounce: debounce,
-  delay: delay,
+	// dom
+	hasClass: hasClass,
+	addClass: addClass,
+	removeClass: removeClass,
+	setStyle: setStyle,
+	setContent: setContent,
+	show: show,
+	hide: hide,
+	offset: offset,
+	getScrollTop: getScrollTop,
+	setScrollTop: setScrollTop,
+	debounce: debounce,
+	delay: delay,
 
-  // amount
-  digitUppercase: digitUppercase,
-  tranNumber: tranNumber,
+	// amount
+	digitUppercase: digitUppercase,
+	tranNumber: tranNumber,
 
-  // random
-  randomColor: randomColor,
-  randomNum: randomNum,
+	// random
+	randomColor: randomColor,
+	randomNum: randomNum,
 
-  // url
-  parseQueryString: parseQueryString,
-  setUrlPrm: setUrlPrm,
-  getUrlPrm: getUrlPrm,
-  getQueryString: getQueryString,
+	// url
+	parseQueryString: parseQueryString,
+	setUrlPrm: setUrlPrm,
+	getUrlPrm: getUrlPrm,
+	getQueryString: getQueryString,
 
-  // time
-  timestampToTime: timestampToTime,
-  getEndTime: getEndTime,
-  timeZoneNameValue: timeZoneNameValue,
-  leapYear: leapYear,
-  dayOfTheYear: dayOfTheYear,
-  dayOfMonth: dayOfMonth,
-  compareTime: compareTime,
+	// time
+	timestampToTime: timestampToTime,
+	getEndTime: getEndTime,
+	timeZoneNameValue: timeZoneNameValue,
+	leapYear: leapYear,
+	dayOfTheYear: dayOfTheYear,
+	dayOfMonth: dayOfMonth,
+	compareTime: compareTime,
 
-  // device
-  getOS: getOS,
-  isPhoneBrowserType: isPhoneBrowserType,
-  getExplore: getExplore,
-  isWeixin: isWeixin,
+	// device
+	getOS: getOS,
+	isPhoneBrowserType: isPhoneBrowserType,
+	getExplore: getExplore,
+	isWeixin: isWeixin,
 
-  // reg
-  isQQ: isQQ,
-  isPhone: isPhone,
+	// reg
+	isQQ: isQQ,
+	isPhone: isPhone,
 
-  // other
-  version: version,
-  ajax: ajax
-
+	// other
+	version: version,
+	ajax: ajax
 };
